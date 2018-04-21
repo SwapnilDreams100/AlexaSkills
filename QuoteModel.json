@@ -1,0 +1,165 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lift my mood",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FeelingReceiveIntent",
+                    "slots": [
+                        {
+                            "name": "feeling",
+                            "type": "FEELING"
+                        }
+                    ],
+                    "samples": [
+                        "{feeling}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "FEELING",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Fun"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lets have some fun"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am relieved."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am very sad."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Worry."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am worried."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am feeling bored."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I hate you."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I hate her."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I hate him."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am very happy."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Angry."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Anger."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am angry."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "What a surprise!"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am surprised."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am feeling ethusiastic."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lets have fun."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fun."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Relief."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am bored."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am releived."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am happy."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am sad."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I am in love."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

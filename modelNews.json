@@ -1,0 +1,106 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "true news",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "Cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "Help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "Stop"
+                    ]
+                },
+                {
+                    "name": "NewsReceiveIntent",
+                    "slots": [
+                        {
+                            "name": "news",
+                            "type": "NEWS"
+                        }
+                    ],
+                    "samples": [
+                        "{news}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "NEWS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Jayalalithaa gets AC in jail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yogeshwar Dutt wins Gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sushma visits China"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pak violates ceasefire"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "France strikes Syria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Currency shortage in India"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ISIS beheads"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Justin Bieber to publish memoir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Trump is dead"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bitcoin has crashed and burned"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zuckerberg has been sacked"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Modi has been kidnapped"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
