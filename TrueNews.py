@@ -5,8 +5,7 @@ from predict import predict
 import time
 
 app = Flask(__name__)
-ask = Ask(app, "/true_news")  # Check
-# ask = Ask(app, "/")  # Check
+ask = Ask(app, "/true_news")
 
 
 def _random(iterable):
@@ -23,13 +22,11 @@ def homepage():
 def start_skill():
     hi = ['Hi!', 'Hello!', 'Hey!', 'Hey there!']
     welcome_msg = _random(hi) + " Which news would you like to verify ?"
-    print(welcome_msg)
     return question(welcome_msg)
 
 
 @ask.intent("NewsReceiveIntent")
 def answer(news):
-    print(news)  # Test
     percent_true = int(predict(news))
     if 0 <= percent_true <= 50:
         result = "This news is {} percent fake.".format(100 - percent_true)
@@ -60,4 +57,3 @@ def _help():
 
 if __name__ == '__main__':
     app.run()
-    # app.run(debug=True)
