@@ -5,8 +5,7 @@ import random
 import time
 
 app = Flask(__name__)
-ask = Ask(app, "/lift_my_mood")  # Check
-# ask = Ask(app, "/")  # Check
+ask = Ask(app, "/lift_my_mood")
 start = 0
 
 
@@ -26,12 +25,9 @@ def predict_mood(mood):
     words = mood.split()
     s = 0
     ans = 'neutral'
-    # print(words)  # Test
     for word in words:
         if word.lower() not in waste:
-            # print(word)  # Test
             for emotion in emotions:
-                # print(time.time() - start)  # Test
                 if time.time() - start < 7.0:
                     score = 0.0
                     url = 'http://swoogle.umbc.edu/SimService/GetSimilarity?operation=api&phrase1=' + emotion + '&phrase2=' + word + '&corpus=webbase&type=relation'
@@ -40,17 +36,13 @@ def predict_mood(mood):
                         score = float(response.text.strip())
                     except:
                         score = 0.0
-                        # print('Error in getting similarity for %s: %s' % (emotion, word))  # Test
-                    # print(emotion, score)  # Test
                     if score > s:
                         s = score
                         ans = emotion
                 else:
                     break
-            # print(word, ans, s)  # Test
     if s < 0.1:
         ans = 'neutral'
-    # print(mood, ans, s)  # Test
     return ans
 
 
@@ -139,13 +131,9 @@ def start_skill():
 @ask.intent("FeelingReceiveIntent")
 def answer(feeling):
     global start
-    # print(feeling)  # Test
     start = time.time()
     mood = predict_mood(feeling)
-    # print(mood)  # Test
     quote = get_quote(mood)
-    # print(quote)  # Test
-    # print(time.time() - start)  # Test
     return statement(quote)
 
 
