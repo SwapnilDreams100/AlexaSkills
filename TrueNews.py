@@ -2,7 +2,6 @@ from flask import Flask
 from flask_ask import Ask, statement, question, session
 import random
 from predict import predict
-import time
 
 app = Flask(__name__)
 ask = Ask(app, "/true_news")
@@ -51,8 +50,9 @@ def _stop():
 
 @ask.intent("AMAZON.HelpIntent")
 def _help():
-    return statement("This Alexa Skill will predict if the news is true or not.\n"
-                     " Just tell it the news item and it will give you a probability of the news item being true.")
+    return question("This Alexa Skill will predict if the news is true or not.\n"
+                    " Just tell it the news item and it will give you a probability of the news item being true.\n"
+                    "Which news would you like to verify ?")
 
 
 if __name__ == '__main__':
