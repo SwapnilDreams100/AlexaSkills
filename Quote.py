@@ -151,7 +151,8 @@ def _stop():
 
 @ask.intent("AMAZON.HelpIntent")
 def _help():
-    return statement("This Alexa Skill will tell you a quote based on your current mood.")
+    return question("This Alexa Skill will tell you a quote based on your current mood.\n"
+                    "So, how are you feeling today ?")
 
 
 if __name__ == '__main__':
