@@ -12,6 +12,7 @@
                 {
                     "name": "AMAZON.HelpIntent",
                     "samples": [
+                        "I need help",
                         "Help"
                     ]
                 },
@@ -38,6 +39,51 @@
                 {
                     "name": "NEWS",
                     "values": [
+                        {
+                            "name": {
+                                "value": "Tornado"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Volcano"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "War"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mumbai"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Delhi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "India"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ISIS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Trump"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Modiji"
+                            }
+                        },
                         {
                             "name": {
                                 "value": "Jayalalithaa gets AC in jail"
@@ -80,22 +126,12 @@
                         },
                         {
                             "name": {
-                                "value": "Trump is dead"
-                            }
-                        },
-                        {
-                            "name": {
                                 "value": "Bitcoin has crashed and burned"
                             }
                         },
                         {
                             "name": {
                                 "value": "Zuckerberg has been sacked"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "Modi has been kidnapped"
                             }
                         }
                     ]
