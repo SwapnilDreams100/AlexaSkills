@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "Quote.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "cheer-up",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-vzo9ok1up"
+    }
+}
